@@ -1,0 +1,22 @@
+{
+  "name": "babel-compilation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.16",
+    "babel-plugin-transform-async-to-promises": "^0.8.15",
+    "babel-plugin-transform-remove-console": "^6.9.4"
+  },
+  "scripts": {
+    "build": "babel --watch src -d build",
+    "start": "node ./build/test"
+  },
+  "keywords": [],
+  "author": "Denis Savenok <denissavenok@gmail.com>",
+  "license": "ISC"
+}
