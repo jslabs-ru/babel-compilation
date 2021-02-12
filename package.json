@@ -9,6 +9,7 @@
     "@babel/core": "^7.12.10",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
     "babel-plugin-transform-async-to-promises": "^0.8.15",
     "babel-plugin-transform-remove-console": "^6.9.4"
   },
