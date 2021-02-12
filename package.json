@@ -7,6 +7,7 @@
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.16",
     "@babel/preset-react": "^7.12.13",
@@ -15,7 +16,7 @@
   },
   "scripts": {
     "build": "babel --watch src -d build",
-    "start": "node ./build/test"
+    "start": "node ./build/class/bork"
   },
   "keywords": [],
   "author": "Denis Savenok <denissavenok@gmail.com>",
