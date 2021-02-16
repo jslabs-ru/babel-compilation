@@ -1,22 +1,25 @@
 class Bork {
-    //Property initializer syntax
-    instanceProperty = "bork";
-    boundFunction = () => {
-        return this.instanceProperty;
+    // Новый синтакс - Property initializer syntax
+    name = 'bork'; /* свойство экземпляра */
+
+    getName = () => {
+        return this.name;
     };
 
-    //Static class properties
-    static staticProperty = "babelIsCool";
+    // Статическое свойство класса
+    static staticProperty = 'babel is cool';
+
+    // Статическая функция класса
     static staticFunction = function() {
         return Bork.staticProperty;
     };
 }
 
-let myBork = new Bork;
+let bork = new Bork;
 
-//Property initializers are not on the prototype.
-console.log(myBork.__proto__.boundFunction); // > undefined
+//Property initializers отсутствуют в прототипе (__proto__).
+console.log(bork.__proto__.getName); // > undefined
 
-console.log(myBork.boundFunction.call(undefined));
+console.log(bork.getName());
 
 console.log(Bork.staticFunction());
